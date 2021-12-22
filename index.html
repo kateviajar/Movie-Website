@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Movie@</title>
+</head>
+<body id="body">
+    <header id="header" class="movieTimeHead">
+        
+        <div class="search-container">
+            <h2 id="title">MOVIE@</h2>
+            <div class="input-container-search">
+                <input type="text" placeholder="Search movie name" name="gameSearch" id="gameSearch">
+            </div>
+        </div> 
+              
+        <div class="mode">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="gameTime">Game Time</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <section>
+            <div>
+                <img src="https://image.tmdb.org/t/p/w500/670x9sf0Ru8y6ezBggmYudx61yB.jpg" alt="image">
+            </div>
+            <article>
+                <h2>Movie Title</h2>
+                <p class="rating">Rating: 8.5</p>
+                <p class="release">Release Date: 2021-09-30</p>
+                <p class="genres">Sciece Fiction, Action, Adventure</p>
+                <h3>Overview</h3>
+                <p class="overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quae eveniet optio aliquam consequatur, quibusdam repellat dolorum debitis quia facere.</p>
+            </article>
+            <button class="closeBtn" id="closeBtn" type="button"><i class="fas fa-times "></i></button>
+        </section>  
+        
+    </main>
+   
+    <div class="otherMovies" id="otherMovies">
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/670x9sf0Ru8y6ezBggmYudx61yB.jpg" alt="image">
+        </div>
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/670x9sf0Ru8y6ezBggmYudx61yB.jpg" alt="image">
+        </div>
+        <div class="movie">
+            <img src="https://image.tmdb.org/t/p/w500/670x9sf0Ru8y6ezBggmYudx61yB.jpg" alt="image">
+        </div>
+    </div>
+  
+     
+</body>
+<script src="apiFetch.js"></script>
+<script src="eventAction.js"></script>
+<script src="validation.js"></script>
+
+</html>

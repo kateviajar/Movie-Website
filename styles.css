@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@100;200;300;400&display=swap');
+/* reset all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+    color:rgb(96, 206, 178);
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/* header */
+
+.movieTimeHead{
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(96, 206, 178);
+    padding: 2% 5% 2% 5%;
+    box-shadow: black 0px 10px 10px 1px ;
+    flex-direction: column;
+    transition: 500ms;
+}
+
+header > div > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0px;
+    padding: 5px;
+}
+
+
+header > div.mode > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 18px;
+    width: 130px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.185) inset;
+    margin: 4%;
+    text-align:center;
+    transition: 0.3s;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+}
+header > div.mode > ul > li > a{
+    text-decoration: none;
+    color: rgb(96, 206, 178);
+    transition: 0.3s;
+}
+
+header > div.mode > ul > li:hover > a{
+    color:#333333;
+    transition: 0.3s;
+}
+
+header > div.mode > ul > li:hover{
+    box-shadow: 100px 100px 100px 0px rgba(96, 206, 178) inset;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* search - Amar */
+
+header > div:nth-child(1) > h2{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: 'Luckiest Guy', sans-serif;
+    letter-spacing: 10px;
+}
+header > div:first-child .input-container-search  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header > div:first-child .input-container-search input{
+    font-size: 26px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 140%;
+    margin: 8px 0;
+    border: none;
+    background-color:#555;
+    color: rgb(218, 162, 215);
+}
+
+header > div:first-child > div > input:focus{
+    outline:none;
+}
+
+/* main movie place */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3% 5%;
+    background-image: linear-gradient(217deg, rgba(218, 162, 215, 0.199), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgb(0, 0, 0), rgba(0,255,0,0) 70.71%),
+            linear-gradient(360deg, rgba(139 67 37 / 80%), rgba(0,0,255,0) 70.71%);
+    padding: 100px;
+    box-shadow: 3px 3px 10px 0px black;
+}
+
+main  > section:first-child{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+main > section:first-child > div{
+    display: flex;
+    justify-content: center;
+    
+    width: 40%;
+}
+
+main > section:first-child > div >img{
+    height: 500px;
+}
+main > section:first-child > article:first-of-type{
+    padding: 30px;
+    width: 40%;
+}
+
+main > section:first-child > article:nth-child(3){
+    width: 80%;
+    margin: 0% 0% 6% 6%;
+}
+
+main > section:first-child> article> h2{
+    font-size: 40px;
+} 
+
+main > section:first-child> article> p{
+    font-size: 20px;
+}
+
+main > section:first-child> article:first-of-type> p{
+    margin: 0px;
+}
+
+main > section:nth-child(1) > article > h3{
+    font-size: 30px;
+} 
+
+/* Kate: other movies */
+main section:first-child {
+    position: relative;
+}
+.otherMovies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0% 5%;
+    transition: 200ms;
+}
+
+.movie {
+    height: 350px;
+    margin: 15px;
+    transition: all 0.4s ease;
+}
+
+.movie img {
+    height: 100%;
+    transition: 200ms;
+}
+.movie img:hover {
+    cursor: pointer;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    font-size: 4rem;
+    transition: all 0.4s ease;
+    color: rgb(218, 162, 215);
+}
+
+.closeBtn:hover {
+    transform: rotate(275deg);
+}
+
+
+/* game part */
+
+#gameArena > h3{
+    font-size: 30px;
+}
+#gameArena > form > div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+#gameArena > form > div > label{
+    font-size: 20px;
+    padding: 13px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+
+
+#gameArena > form > div:nth-child(2){
+    margin-top: 10px;
+    
+}
+
+#gameArena > form > div> a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(218, 162, 215);
+}
+
+#gameArena > form > div> a:hover{
+    box-shadow: 0px 0px 100px red inset;
+    color: white;
+    outline: rgb(218, 162, 215) dashed 3px;
+    transition: 0.4s;
+}
+
+/* Slider for guessing rating */
+
+.slider {
+    -webkit-appearance: none;
+    border-radius: 10px;    
+    width: 70%;
+    outline: none;
+    background: #1a1919;
+    height: 10px;
+    border: 1px solid rgb(96, 206, 178);
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    transition: 0.2s;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background: #333333;
+    cursor: pointer;
+    border: 7px solid rgb(96, 206, 178);
+  }
+
+  
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: #333333;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb:hover{
+    transition: 0.2s;
+    height: 40px;
+    width: 40px;
+  }
+
+  /* game ttime changes */
+
+  .gameTimeHead{
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(96, 206, 178);
+    padding: 2% 5% 2% 5%;
+    box-shadow: none;
+    flex-direction: column;
+    margin-top: 15%;
+    transition: 500ms;
+  }
+
+  .resultCorrect{
+      background-color: rgb(146, 211, 81);
+      color: green;
+      border-bottom: green;
+  }
+
+  .resultWrong{
+    background-color: rgb(231, 190, 190);
+    color: red;
+    border-bottom: red;
+    border-width: 5px;
+  }
+
+  .result{
+    margin: 30px;
+    font-size: 40px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+  }
